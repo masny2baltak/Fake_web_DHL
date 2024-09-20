@@ -1,0 +1,65 @@
+<div id="hero">
+
+    
+    <h1>Odeslání balíku</h1>
+
+
+  
+    <div class="container">
+        
+        <form class="box" action="#" method="post">
+            <h2>Informace o balíku</h2>
+            
+            <label for="sender">Odesílatel:</label>
+            <input type="text" id="sender" name="sender" placeholder="Jan Novák" required>
+
+            <label for="receiver">Příjemce:</label>
+            <input type="text" id="receiver" name="receiver" placeholder="Petra Svobodová" required>
+
+            <label for="weight">Váha (kg):</label>
+            <input type="number" id="weight" name="weight" placeholder="5" required>
+
+            <label for="dimensions">Rozměry (cm):</label>
+            <input type="text" id="dimensions" name="dimensions" placeholder="30x20x10" required>
+
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="prepared">Připraveno k odeslání</option>
+                <option value="shipped">Odesláno</option>
+                <option value="delivered">Doručeno</option>
+            </select>
+        </form>
+
+       
+        <form class="box" action="#" method="post">
+            <h2>Platební údaje</h2>
+
+            <label for="tracking">Číslo zásilky:</label>
+            <input type="text" id="tracking" name="tracking" placeholder="123456789" required>
+
+            <label for="price">Cena (CZK):</label>
+            <input type="number" id="price" name="price" placeholder="150" required>
+
+            <label for="payment">Platební metoda:</label>
+            <select id="payment" name="payment" required>
+                <option value="cash">Dobírka</option>
+                <option value="card">Platební karta</option>
+                <option value="bank">Bankovní převod</option>
+            </select>
+
+            <h3>Platební údaje karty</h3>
+            <label for="card-number">Číslo karty:</label>
+            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+
+            <label for="expiry-date">Datum expirace:</label>
+            <input type="month" id="expiry-date" name="expiry-date" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+            <button type="submit">Odeslat</button>
+        </form>
+    </div>
+
+</div>
+
